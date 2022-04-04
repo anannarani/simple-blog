@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="https://kit.fontawesome.com/adf61475a2.js" crossorigin="anonymous"></script>
+        <style>
+            #screen {
+                /* border: 1px solid black;  */
+                width: 100%;
+            }
+            #social_link {
+                /* border: 1px solid green;  */
+                height: 40px; 
+                width: 100%;
+                display: flex;
+                background-color: lightgreen;
+                color: white;
+                box-shadow:0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            }
+            .social_icon {
+                margin-left: 30px;
+                margin-top: 8px;
+                margin-bottom: 5px;
+                font-size: 25px ;
+            }
+            #navbar {
+                /* border: 1px solid red;  */
+                height: 90px; 
+                width: 100%;
+                display: flex;
+                background-color: rgb(167, 157, 157);
+                box-shadow:0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);                
+            }
+            .nav_option {
+                margin-left: 30px; 
+                margin-top: 40px; 
+            }
+            .nav_option:hover{
+                text-decoration: underline;
+                
+            }
+            #bg_img {
+                /* border: 1px solid black;  */
+                height: 350px; 
+                width: 100%;
+            }
+            #content {
+                border:1px solid green; 
+                /* height: 600px;  */
+                width: 100%; 
+                display: flex;
+            }
+            #left_part {
+                /* border: 1px solid black;  */
+                /* height: 100%;  */
+                width: 70%;
+                background-color: #fff;
+            }
+            .left_button {
+                height: 40px;
+                width: 100px;
+                background-color:  #f0563d;
+                color: white;
+                /* margin-left: 40px; */
+                border: 1px #f0563d;
+                font-size: large;
+            }
+            #right_part {
+                /* border: 1px solid blue;  */
+                /* height: 600px;  */
+                width: 30%;
+            }
+            #right_button {
+                display: flex; 
+                font-size: 30px; 
+                margin-left: 5px; 
+                margin-top: 15px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="screen"> 
+            <div id="social_link">
+                <div class="social_icon" style="margin-left: 1000px;">
+                    <i class="fab fa-facebook"></i>
+                </div>
+
+                <div class="social_icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+
+                <div class="social_icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+
+                <div class="social_icon">
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+            <div id="navbar">
+                <div style="height: 100%; width: 50%; color: white;">
+                    <p style="margin-left: 80px; font-size: 25px; margin-top: 10px; color: lightgreen" > শাফায়েতের ব্লগ</p>
+                    <p style="margin-left: 80px; margin-top: -10px; ">প্রোগ্রামিং, অ্যালগরিদম, ব্যাকএন্ড ইঞ্জিনিয়ারিং</p>
+                </div>
+                <div style="height: 100%; width: 50%; display: flex; color: white; font-weight: bold; font-size: 17px;">
+                    <p class="nav_option" style="margin-left: 50px;">HOME</p>                   
+                    <P class="nav_option">অ্যালগরিদম নিয়ে যত লেখা!</P>
+                    <P class="nav_option">আমার সম্পর্কে</P>
+                
+                </div>
+            </div>
+            <div id="bg_img">
+                <img style="width: 100%; height: 350px;" src="https://media.istockphoto.com/photos/open-book-and-steaming-cup-of-coffee-on-wooden-table-picture-id1334372779?b=1&k=20&m=1334372779&s=170667a&w=0&h=lfTulHKBslG9K9UFwiV6IaM9B5eRM7wIGgWYr-BNb9A="/>
+            </div>
+            <div id="content">
+                <div id="left_part">
+                    <div style="margin-left: 80px; margin-bottom: 30px; margin-top: 40px;">
+                        <h2 style="color: #666;">ব্যাকএন্ড ইঞ্জিনিয়ারিং: কনসিস্টেন্ট হ্যাশিং</h2>
+                        <p style="color: orangered;">জুলাই ৩, ২০২১ by শাফায়েত</p>
+                        <p style="color: #616161;">কনসিস্টেন্ট হ্যাশিং সার্ভারে লোড ব্যালেন্স করার একটি অ্যালগরিদম। এটা ব্যবহার করে নিশ্চিত করা হয় ডিস্ট্রিবিউটেড সিস্টেমে নতুন সার্ভার যোগ করলে বা কোন সার্ভার ডাউন হয়ে গেলে অন্যান্য সার্ভারের উপর যতটা সম্ভব কম প্রভাব পরে।  এই লেখায় আমি বেসিক হ্যাশিং নিয়ে তেমন আলোচনা করবো না, আমি আলোচনা করবো কনসিস্টেন্ট হ্যাশিং কিভাবে কাজ করে এবং কি ধরণের সমস্যা সমাধান করতে এটা কাজে লাগে সেটা নিয়ে।</p>
+                        <input class="left_button" type="button" value="বিস্তারিত"/>
+                    </div>
+                    <hr style="margin-left: 80px;"/>
+                    <div style="margin-left: 80px; margin-bottom: 30px; margin-top: 40px;">
+                        <h2 style="color: #666;">ব্যাকএন্ড ইঞ্জিনিয়ারিং: লগ-স্ট্রাকচার্ড-ট্রি</h2>
+                        <p style="color: orangered;" >মে ২১, ২০২১</p>
+                        <p style="color: #616161;">আজকে কথা বলবো ডেটাবেজ বানাতে ব্যবহার করা হয় এমন একটি ডেটা স্ট্রাকচার নিয়ে। সাধারণত ডেটাবেসের সাথে আমাদের পরিচয় হয় Sql ধরণের ট্রানজেকশনাল ডেটাবেজ দিয়ে, যেমন MySQL, PostGreSQL। এসব ডেটাবেসে বি+ ট্রি (B+ Tree) ব্যবহার করে ডেটা সংরক্ষণ করা হয়।  এই লেখায় আমি আলোচনা করবো ডেটাবেজ তৈরি করতে জনপ্রিয় আরেকটি ডেটা স্ট্রাকচার নিয়ে যার নাম লগ-স্ট্রাকচার্ড-ট্রি বা সংক্ষেপে LSM Tree। আগেই বলে নেই, এটা প্রোগ্রামিং কনটেস্টে ব্যবহার করার মত কোন ডেটা স্ট্রাকচার না। তবে সফটওয়্যার ইঞ্জিনিয়ারারদের কেন ডেটা স্ট্রাকচার, অ্যালগরিদম এবং হার্ডওয়্যার নিয়ে জানা দরকার তার একটা উদাহরণ এই LSM Tree। ব্যাকএন্ড ইঞ্জিন...</p>
+                        <input class="left_button" type="button" value="বিস্তারিত"/>
+                    </div>
+                    <hr style="margin-left: 80px;"/>
+                    <div style="margin-left: 80px; margin-bottom: 30px; margin-top: 40px;">
+                        <h2 style="color: #666;">ডাইনামিক প্রোগ্রামিং ৯ (ট্রি, মিনিমাম ভারটেক্স কভার)</h2>
+                        <p style="color: orangered;">মে ৩, ২০২০ @ ডাইনামিক প্রোগ্রামিং, ডিপি</p>
+                        <p style="color: #616161;">(সবগুলো পর্ব) ডাইনামিক প্রোগ্রামিং দিয়ে ট্রি(Tree) সংক্রান্ত অনেক সমস‍্যার সমাধান করা যায়। সাধারণ গ্রাফে পলিনোমিয়াল টাইমে সমাধান করা যায় না এমন অনেক প্রবলেম ট্রি গ্রাফে সহজেই ডাইনামিক প্রোগ্রামিং দিয়ে সমাধান করা যায় কারণ ট্রি তে কোন সাইকেল থাকে না। এই পর্বে আমরা সেরকমই একটা ক্লাসিক প্রবলেম দেখবো যার নাম মিনিমাম ভারটেক্স কভার। ধরা যাক একটি শহরে কিছু রাস্তা আছে, এখন প্রতি রাস্তায় মোড় বা জাংশনে আমরা পাহারাদার বসাতে চাই। কোনো মোড়ে পাহারাদার বসালে সে মোড়ের সাথে যুক্ত রাস্তাগুলো একাই পাহারা দিতে পারে। এখন তোমাকে বলতে হবে সব কয়টা রাস্তা পাহারা দিতে নূন্যতম কয়জন পাহারাদার দরকার? একট..</p>
+                        <input class="left_button" type="button" value="বিস্তারিত"/>
+                    </div>
+                    <hr style="margin-left: 80px;"/>
+                </div>
+                <div id="right_part">
+                    <div style="margin-left: 30px;">
+                        <h4 style="font-weight: bold;margin-top: 40px;">English Blog</h4>
+                        <h2 style="color: #393939;">সাবস্ক্রাইব</h2>
+                        <hr style="color: #f0f0f0;"/>
+                        <div id="right_button">
+                            <i style=" background-color: blue; color: white;" class="fab fa-facebook-square"></i>
+                            <i style="margin-left: 10px; background-color:#7a7a7a;" class="fab fa-github"></i>
+                            <i style="margin-left: 10px; background-color: purple; color: white;" class="fab fa-yahoo"></i>
+                        </div>
+                            <h5 style="margin-top: 10px;">Secured by <label style="color: blue;"> OneAll Social Login </label></h5>
+                            <div style="font-size: 15px;">
+                                <p style="color: #933;">প্রোগ্রামিং কনটেস্ট এবং অ‍্যালগোরিদম</p>
+                                <p style="margin-top: -15px; color: #323166;">অনুপ্রেরণা(৪):</p>
+                                <p style="margin-top: -15px;">কেন আমি প্রোগ্রামিং শিখবো?</p>
+                                <p style="margin-top: -15px;">কম্পিউটার বিজ্ঞান কেন পড়বো?</p>
+                                <p style="margin-top: -15px;">প্রোগ্রামিং কনটেস্ট এবং অনলাইন জাজে হাতেখড়ি</p>
+                                <p style="margin-top: -15px;">কনফিউজড প্রোগ্রামার</p>
+                            </div>
+                            <div style="margin-top: 40px; font-size: 15px;">
+                                <p style="color: #323166;">ব্যাকএন্ড ইঞ্জিনিয়ারিং:</p>
+                                <p style="margin-top: -15px;">ব্লুম ফিল্টার</p>
+                                <p style="margin-top: -15px;">লগ-স্ট্রাকচার্ড-ট্রি</p>
+                                <p style="margin-top: -15px;">কনসিস্টেন্ট হ্যাশিং(নতুন)</p>
+                                <p style="margin-top: -15px;">ক‍্যাশিং অ‍্যালগরিদম: এল-আর-ইউ ক‍্যাশ</p>
+                            </div>
+                            <div style="font-size: 15px; margin-top: 40px;">
+                                <p style="color: #323166;">অ্যালগরিদম বেসিক(৬):</p>
+                                <p style="margin-top: -15px;">বিগ "O" নোটেশন</p>
+                                <p style="margin-top: -15px;">কমপ্লেক্সিটি ক্লাস(P-NP, টুরিং মেশিন ইত‍্যাদি)</p>
+                                <p style="margin-top: -15px;">হাল্টিং প্রবলেম</p>
+                                <p style="margin-top: -15px;">বাইনারি সার্চ - ১</p>
+                                <p style="margin-top: -15px;">বাইনারি সার্চ - ২(বাইসেকশন)</p>
+                                <p style="margin-top: -15px;">ফ্লয়েড সাইকেল ফাইন্ডিং অ্যালগোরিদম</p>
+                            </div>
+
+                    </div>
+                </div>               
+           </div>
+        </div>
+    </body>
+</html> 
